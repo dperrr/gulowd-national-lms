@@ -9,14 +9,14 @@ const Login = () => {
                 <div className="flex-none w-4/12 flex flex-col items-center bg-lightBrown">
                     <div className="flex flex-col items-center justify-center mt-16">
                         <img src={Logo} width="200rem" alt="GNHS Logo"/>
-                        <h1 className="text-6xl text-center my-2 font-extrabold">Gulod National High School</h1>
-                        <p>Learning Management System</p>
+                        <h1 className="text-6xl text-center my-5 font-extrabold">Gulod National High School</h1>
+                        <p className="font-medium">Learning Management System</p>
                     </div>
                     <form className="mt-7 w-80">
                         <div className="flex border-2 border-gray mb-3">
                             <span className="w-10 flex items-center justify-center bg-white" >
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 24" fill="none">
-                                    <g filter="url(#filter0_d_2334_17)">
+                                    <g>
                                     <mask id="mask0_2334_17" style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="2" y="0" width="24" height="24">
                                     <rect x="2" width="24" height="24" fill="#D9D9D9"/>
                                     </mask>
@@ -38,7 +38,7 @@ const Login = () => {
                                     </defs>
                                     </svg>
                             </span>
-                            <input type="text" className="w-full focus:outline-none" />   
+                            <input type="text" className="w-full focus:outline-none font-bold" placeholder="ID Number"  />   
                         </div>
                         <div className="flex border-2 border-gray mb-3">
                             <span className="w-10 flex justify-center items-center bg-white">
@@ -51,7 +51,7 @@ const Login = () => {
                                 </g>
                                 </svg>
                             </span>
-                            <input type="text" className="w-full focus:outline-none" />
+                            <input type="text" className="w-full focus:outline-none font-bold" placeholder="Password" />
                         </div>
                         <div className="text-right my-3">
                             <a href="#!" className="text-lightGreen">Forgot password</a>

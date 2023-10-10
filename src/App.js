@@ -1,7 +1,14 @@
+import { BrowserRouter , Routes , Route } from "react-router-dom";
+import Login from "./pages/Login.js";
+
 function App() {
   return (
     <>
-      <h1>BENTELOG</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login></Login>}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
